@@ -1,0 +1,180 @@
+@import '../app/styles/_main.scss';
+
+// Core Global Style file
+html * {
+    font-family : $font-family;
+    .ui.button , h1, h2, h3, h4, h5 ,h6, a, span, input, button, label{
+        font-family : $font-family ;
+    }
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  line-height: 1.5;
+  font-family: $font-family ;
+  color: $light-grey-color;
+  letter-spacing: 0.1px;
+  .ui.button, .ui.card, .ui.segment , h1, h2, h3, h4, h5 ,h6, a, span, input, button, label{
+    font-family : $font-family ;
+    letter-spacing: 0.1px;
+  }
+  label{
+    color : #84859E
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400&display=swap');
+html{
+    body{
+        p{
+            font-family: Manrope, sans-serif;
+        }
+    }
+}
+.ui.dimmer.modals{
+    // background:$lightGray-2;
+    // backdrop-filter: blur(5px);
+    border-radius: 6px;
+    background: rgba(9, 30, 66, 0.54);
+    .ui.modal {
+        // box-shadow: 0 3px 9px -1px rgba(0,0,0,.05);
+        box-shadow: none;
+    }
+
+    .close {
+        top: 0.5rem;
+        color: $light-grey-color-14;
+        right: 0.5rem;
+        opacity: 0.6;
+        font-size: 1rem;
+        &::before{
+            content: url('./images/Icons/x.svg');
+        }
+    }
+}
+
+#app {
+  background-color: $bg-main-color;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  font-family: $font-family;
+
+  a {
+      cursor: pointer;
+      
+  }
+}
+
+#app {
+    .main_app_box {
+        height: 100%;
+        // display: flex;
+        width:100%;
+        .root_app_container {
+            width:100%;
+
+             &.adjust_container {
+                margin-top:48px;
+            }
+            .container {
+                height:100%;
+            }
+        }
+        .container {
+            display: flex;
+            // width:100%;
+        }
+        .container_wrapper > div ~ div {
+            // width: 100%;
+        }
+    }
+
+    .main_app_box > div + div {
+        height: fit-content;
+    }
+
+    .white-box {
+        box-shadow: 0 12px 15px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        border-radius: 0.5rem;
+        background: #fff;
+        text-align: center;
+        padding: 1rem 2rem;
+    }
+}
+.main-app-container {
+    height: 100%;
+    width: 100%;
+}
+
+.disabled-pointer-events {
+    pointer-events: none !important;
+}
+.Toastify__toast{
+    display: flex;
+    color: $light-grey-color-8 ;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.25);
+    padding: 0px;
+    min-height: 4rem;
+    .Toastify__toast-body {
+        margin: auto 1.25rem;
+    }
+    button{
+        margin: auto 1rem;
+        color: $light-grey-color-5 ;
+    }
+}
+.Toastify__toast--info {
+    background: $Blue-Secondary-120 !important;
+}
+.Toastify__toast--success {
+    background: $Blue-Secondary-120 !important;
+    box-shadow: 1px 1px 6px 2px rgba(0, 0, 0, 0.25);
+}
+.Toastify__toast--warning {
+    background: $errorRed !important;
+}
+.Toastify__toast--error {
+    background: $errorRed !important;
+}
+
+.emailNotVerifiedTopBar{
+    height: 48px !important;
+    top: 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.04);
+    width: 100%;
+    background-color: $white;
+     position: absolute;
+    z-index:1;
+    span{
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #6F6F6F;
+      height: 100%;
+      svg,h3{
+        color: #49A4E2;
+      }
+      svg{
+        width :18px;
+        height: 17px;
+        margin-right: 0.4rem;
+      }
+      h3{
+        margin: 0%;
+        margin-left: 0.4rem;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }

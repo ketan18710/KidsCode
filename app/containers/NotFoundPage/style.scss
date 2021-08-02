@@ -1,0 +1,23 @@
+.not_found_cont {
+    display: flex;
+    font-family: Lato;
+    align-items: center;
+    justify-content: center;
+    .alt_img {
+        max-width: 400px;
+        width: 100%;
+    }
+    .text_nf {
+        h1 {
+            font-size: 7.5rem;
+            font-weight: bold;
+        }
+        h2 {
+            font-weight: 2rem;
+            font-weight: bold;
+        }
+        p {
+            font-size: 1.2rem;
+        }
+    }
+}

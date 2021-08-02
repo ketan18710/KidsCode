@@ -1,0 +1,9 @@
+{
+  "grorapid.containers.LocaleToggle.de": "de",
+  "grorapid.containers.LocaleToggle.en": "en",
+  "grorapid.containers.NotFoundPage.header": "Seite nicht gefunden",
+  "grorapid.containers.LoginPage.header": "Melden Sie sich bei grorapid an",
+  "grorapid.containers.LoginPage.WelcomeMsg": "Willkommen, bitte melden Sie sich in Ihrem Konto an",
+  "grorapid.containers.LoginPage.RememberMe": "Behalte mich in Erinnerung",
+  "grorapid.containers.LoginPage.Title": "Behalte mich in Erinnerung"
+}

@@ -1,0 +1,42 @@
+//Breakpoints
+$br-xs: 0;
+$br-sm: 576px;
+$br-sm: 768px;
+$br-lg: 992px;
+$br-xl: 1200px;
+
+
+//core Padding
+$pd-0: 0;
+$pd-pt-5: 0.5rem;
+$pd-1: 1rem;
+$pd-1-pt-5: 1.5rem;
+$pd-2: 2rem;
+$pd-2-pt-5: 2.5rem;
+
+//margin
+$mg-0: 0;
+$m-auto: auto;
+$mg-pt-5: 0.5rem;
+$mg-1: 1rem;
+$mg-1-pt-5: 1.5rem;
+$mg-2: 2rem;
+$mg-2-pt-5: 2.5rem;
+//Error - submit margin
+$mg-error-submit : 10px;
+
+//Login form var
+$box-shadow: 4px 4px 25px #E6EBF8;;
+
+//Pointer-events
+$pointer-event-none: none;
+
+
+//Side bar Var
+$sidebar-expanded-width: 260px;
+$sidebar-collapsed-width: 80px;
+//cards box shadow
+$card_box_shadow : -1px 1px 16px rgba(0, 0, 0, 0.12);
+//box-shadows:
+$box-shadow-modal-1 :  -1px 1px 16px rgba(0, 0, 0, 0.05);
+$box-shadow-1 :  0px 4px 14px rgba(179, 178, 178, 0.25);

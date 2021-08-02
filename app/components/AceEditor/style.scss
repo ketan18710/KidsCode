@@ -1,0 +1,12 @@
+@import './../../styles/main.scss';
+#ace-editor {
+  font-family: monospace !important;
+  font-size: 20px !important;
+  direction: ltr !important;
+  text-align: left !important;
+  width: 100% !important;
+}
+.ace_editor.readOnly{
+  color: white !important;
+  height: 200px !important;
+}

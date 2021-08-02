@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- The first thing in any HTML file should be the charset -->
+  <meta charset="utf-8">
+
+  <!-- //FIXME: Remove this after prod deployment -->
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+  <title>Kids Code | Home</title>
+
+  <!-- Make the page mobile compatible -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet"> -->
+
+  <script type="text/javascript">
+
+
+  </script>
+
+  <!-- Allow installing the app to the homescreen -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  <link id="favicon" rel="shortcut icon" href="./images/favicon.ico" />
+  <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/react-draft-wysiwyg@1.12.3/dist/react-draft-wysiwyg.css' />
+  <!-- <title>%REACT_APP_LOGO%</title> -->
+
+  <script>
+    if (typeof window.__REACT_DEVTOOLS_GLOBAL_HOOK__ === "object" && !Boolean(window.location.port)) {
+      for (let [key, value] of Object.entries(window.__REACT_DEVTOOLS_GLOBAL_HOOK__)) {
+        window.__REACT_DEVTOOLS_GLOBAL_HOOK__[key] = typeof value == "function" ? () => { } : null;
+      }
+    }
+
+    
+  </script>
+  <script type="text/javascript">
+   
+  </script>
+
+  <!-- Google Analytics Script -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158951641-2"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+          dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+  </script>
+
+  <!-- //Tawk. t -->
+  <!-- <script type="text/javascript">
+    var Tawk_API=Tawk_API||{};
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5fb699b5a1d54c18d8eb548f/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script> -->
+    <style>
+      body {
+        margin: 0;
+        padding: 0 !important;
+      }
+  
+      .init-images {
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+  
+      .shiny {
+        width: 100vw;
+        height: 100vh;
+        padding: 0;
+        overflow: hidden;
+        text-align: center;
+      }
+  
+      .init-logo {
+        height: 30px;
+      }
+  
+      .init-loader {
+        height: 100px;
+      }
+  
+      .dimmer {
+        overflow: hidden;
+      }
+  
+      .lds-ripple {
+        display: inline-block;
+        position: relative;
+        width: 80px;
+        height: 80px;
+      }
+  
+      .lds-ripple div {
+        position: absolute;
+        border: 4px solid #fff;
+        opacity: 1;
+        border-radius: 50%;
+        animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+      }
+  
+      .lds-ripple div:nth-child(2) {
+        animation-delay: -0.5s;
+      }
+  
+      @keyframes lds-ripple {
+        0% {
+          top: 40px;
+          left: 40px;
+          width: 0;
+          height: 0;
+          opacity: 1;
+        }
+  
+        100% {
+          top: 0px;
+          left: 0px;
+          width: 80px;
+          height: 80px;
+          opacity: 0;
+        }
+      }
+    </style>
+</head>
+
+<body>
+  <!-- Display a message if JS has been disabled on the browser. -->
+  <noscript>If you're seeing this message, that means
+    <strong>JavaScript has been disabled on your browser</strong>, please
+    <strong>enable JS</strong> to make this app work.</noscript>
+
+  <!-- The app hooks into this div -->
+  <div id="app">
+    <div class="shiny">
+      <div class="init-images">
+        <img id="platform_logo" src="" class="init-logo" />
+        <h2 id="platform_title"></h2>
+
+        <script>
+           document.getElementById('platform_logo').src = window.PLATFORM_CONFIG.logo; 
+        </script>
+        <br />
+      </div>
+    </div>
+  </div>
+  <!-- Open Sans Font -->
+  <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet"> -->
+
+  <!-- A lot of magic happens in this file. HtmlWebpackPlugin automatically injects all assets (e.g. bundle.js, main.css) with the correct HTML tags, which is why they are missing in this file. Don't add any assets here! (Check out webpack.dev.babel.js and webpack.prod.babel.js if you want to know more) -->
+</body>
+
+</html>

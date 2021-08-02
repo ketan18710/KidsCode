@@ -1,0 +1,7 @@
+@import '../../styles/main';
+.VideoPlayer{
+  @include centreAlign;
+  .KidsCodevideoPlayer{
+    width: 90%;
+  }
+}

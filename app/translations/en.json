@@ -1,0 +1,60 @@
+{
+  "grorapid.containers.LocaleToggle.de": "de",
+  "grorapid.containers.LocaleToggle.en": "en",
+  "grorapid.containers.NotFoundPage.header": "Page not found.",
+  "grorapid.containers.LoginPage.header": "Login to grorapid",
+  "grorapid.containers.LoginPage.WelcomeMsg": "Welcome, please login to your account.",
+  "grorapid.containers.LoginPage.RememberMe": "Remember me",
+  "grorapid.containers.LoginPage.Title": "Login Page",
+  "grorapid.containers.Common.ForgotPass": "Forgot Password?",
+  "grorapid.containers.Common.RememberMe": "Remember me",
+  "grorapid.containers.RegisterPage.header": "Create free account",
+  "grorapid.containers.RegisterPage.WelcomeMsg": "Get started in just 30 seconds",
+  "grorapid.containers.OnBoarding.IndustryNames": [
+    "Health & Fitness",
+    "Beauty & Wellness",
+    "Fashion",
+    "Photography",
+    "Restraunt",
+    "Travel & Tourism",
+    "Hotels",
+    "Ecommerce",
+    "Software & IT",
+    "Media",
+    "Education",
+    "Finance"
+  ],
+  "grorapid.containers.OnBoarding.Goals": [
+    {
+      "goal": "Get new customers",
+      "icon": "add user",
+      "description": "Landing Page and Lead forms"
+    },
+    {
+      "goal": "Grow email list",
+      "icon": "rocket",
+      "description": "Landing Page with a form"
+    },
+    {
+      "goal": "Get your business online",
+      "icon": "search",
+      "description": "Online web page for your business"
+    },
+    {
+      "goal": "Increase sales",
+      "icon": "shopping cart",
+      "description": "Beautiful emails to boost your sales"
+    },
+    {
+      "goal": "Send email broadcast",
+      "icon": "mail",
+      "description": "Beautiful email to leads and customers"
+    },
+    {
+      "goal": "Newsletter for subscribers",
+      "icon": "users",
+      "description": "Send newsletter to your subscribers"
+    }
+  ]
+  
+}

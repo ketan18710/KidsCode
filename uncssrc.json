@@ -1,0 +1,4 @@
+{
+    "ignore": ["hover", "click", "active", "focus", "not([disabled]):hover"]
+  }
+  
