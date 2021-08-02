@@ -1,12 +1,24 @@
 @import './../../styles/main.scss';
 #ace-editor {
-  font-family: monospace !important;
+  // font-family: monospace !important;
+  // font-family: monaco !important; 
   font-size: 20px !important;
   direction: ltr !important;
   text-align: left !important;
   width: 100% !important;
+  font-family: Monaco !important;
+  font-family: "Monaco", "Menlo", "Ubuntu Mono", "Droid Sans Mono", "Consolas", monospace !important;
+}
+body{
+  font-family: Monaco !important;
+
 }
 .ace_editor.readOnly{
   color: white !important;
   height: 200px !important;
 }
+// .ace_editor {
+//   // font-family: sans-serif;
+//   .ace_tooltip {
+//   }
+// }

@@ -66,7 +66,7 @@ function Editor(props) {
           <h3>Output : </h3>
         </Grid>
         <Grid item lg={12} >
-          <AceEditor runTrigger={false} output="kids code\nkids code\nkids code\n" readOnly={true}/>
+          <AceEditor runTrigger={false} output={"kids code\nkids code\nkids code\n"} readOnly={true}/>
         </Grid>
       </Grid>
     </Grid>

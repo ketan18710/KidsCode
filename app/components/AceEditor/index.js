@@ -31,7 +31,8 @@ function Editor(props) {
           mode="python"
           theme="monokai"
           onChange={(code)=>setEditorVal(code)}
-          // showPrintMargin={true}
+          showPrintMargin={true}
+          debounceChangePeriod
           showGutter={!readOnly ? true : false }
           readOnly={readOnly}
           className={readOnly ? 'readOnly' : ''}
