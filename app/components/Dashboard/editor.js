@@ -39,7 +39,7 @@ function Editor(props) {
     }else if(codeResult.status === API_CONSTANTS.success){
       setTriggers({...triggers,loading : false,runTrigger:false})
       setOutput(codeResult.data)
-    }else if(codeResult.status === API_CONSTANTS.success){
+    }else if(codeResult.status === API_CONSTANTS.error){
       setTriggers({...triggers,loading : false,runTrigger:false})
       setOutput(codeResult.data)
     }

@@ -11,7 +11,7 @@ function Home(props) {
     <div className="HomeComponent">
       <div className="section1">
         <div className="content">
-          <h2>Welcome to the KidsCode space!</h2>
+          <h2>Welcome to the KidCode space!</h2>
           <h2>We make Coding Easy</h2>
         </div>
         <Button variant="contained" disableElevation color="primary" onClick={()=>redirectToUrl(APP_ROUTES.DASHBOARD)}>Come check us out !</Button>
@@ -21,21 +21,38 @@ function Home(props) {
           <div className="textContainer">
             <h2>Why Choose Us</h2>
             <div className="text">
-              <p>
-                Tempor cillum sint deserunt commodo consectetur qui nisi dolore laboris eiusmod.
-                 Ad ea reprehenderit laboris quis exercitation. Do consectetur officia aliqua in 
-                 minim aliquip nostrud amet duis amet adipisicing. Reprehenderit anim ad duis tempor sit sit.
-              </p>
-              <p>
-                Tempor cillum sint deserunt commodo consectetur qui nisi dolore laboris eiusmod.
-                 Ad ea reprehenderit laboris quis exercitation. Do consectetur officia aliqua in 
-                 minim aliquip nostrud amet duis amet adipisicing. Reprehenderit anim ad duis tempor sit sit.
-              </p>
-              <p>
-                Tempor cillum sint deserunt commodo consectetur qui nisi dolore laboris eiusmod.
-                 Ad ea reprehenderit laboris quis exercitation. Do consectetur officia aliqua in 
-                 minim aliquip nostrud amet duis amet adipisicing. Reprehenderit anim ad duis tempor sit sit.
-              </p>
+              <ul className="point">
+                <li>
+                  Custom algorithms for personalised learning
+                  <ul className="subPoint">
+                    <li>AI algorithms to help each kid in achieving their learning goals</li>
+                  </ul>
+                </li>
+              </ul>
+              <ul className="point">
+                <li>
+                  Trusted Content 
+                  <ul className="subPoint">
+                    <li>Made by coders for the next generation coders</li>
+                  </ul>
+                </li>
+              </ul>
+              <ul className="point">
+                <li>
+                  We Care 
+                  <ul className="subPoint">
+                    <li>We care about the kids safety online </li>
+                  </ul>
+                </li>
+              </ul>
+              <ul className="point">
+                <li>
+                  Age specific content
+                  <ul className="subPoint">
+                    <li>Learn the same concepts in different animations as per users choice.</li>
+                  </ul>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
@@ -54,11 +71,9 @@ function Home(props) {
             <div className="description">
               <div className="point">
                 <div className="text">
-                  <h3>Videos</h3>
+                  <h3>Learning through animation</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.Temporibus, facere 
-                    eius accusamus molestiae doloribus dicta ea,officiis doloremque labore voluptates,
-                    sunt aperiam. Magni, earum praesentium. Nemo eos enim eligendi voluptatem.
+                    Get The Best Lessons anytime. Zero Downtime and its a promise.
                   </p>
                 </div>
                 <div className="image">
@@ -67,11 +82,9 @@ function Home(props) {
               </div>
               <div className="point">
                 <div className="text">
-                  <h3>Zero Setup</h3>
+                  <h3>Integrated terminal for insights</h3>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.Temporibus, facere 
-                    eius accusamus molestiae doloribus dicta ea,officiis doloremque labore voluptates,
-                    sunt aperiam. Magni, earum praesentium. Nemo eos enim eligendi voluptatem.
+                    Code on the platform. Zero Setup 
                   </p>
                 </div>
                 <div className="image">
@@ -83,14 +96,11 @@ function Home(props) {
         </div>  
         <div className="innerContainer2">
           <div className="textContainer">
-            <h3>Get The Best Lessons RIght on demand</h3>
+            <h3>Ready to get started !</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.Temporibus, facere 
-              eius accusamus molestiae doloribus dicta ea,officiis doloremque labore voluptates,
-              sunt aperiam. Magni, earum praesentium. Nemo eos enim eligendi voluptatem.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.Temporibus, facere 
-              eius accusamus molestiae doloribus dicta ea,officiis doloremque labore voluptates,
-              sunt aperiam. Magni, earum praesentium. Nemo eos enim eligendi voluptatem.
+              Dive in to learn how to code<br/>
+              We teach coding to kids using animation videos <br/>
+              It's 100% free, fun and secure
             </p>
           </div>
           <div className="image">

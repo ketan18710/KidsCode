@@ -5,23 +5,29 @@
     height: 100vh;
     max-height: 100vh;
     .sidebar{
-        padding-top: 5rem;
+        padding-top: 2rem;
         background-color: $primary-blue;
         height: 100%;
         h1{
             text-align: center;
             color: $white;
+            width: 100%;
+            cursor: pointer;
         }
         h3{
-            margin: 2rem 0;
+            margin: 1rem 0;
             text-align: center;
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 600;
             color: $white;
             cursor: pointer;
+            width: 100%;
         }
         .active{
             color: $blue;
+        }
+        .bottom{
+            margin-top: auto;
         }
     }
     .mainContent{

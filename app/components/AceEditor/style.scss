@@ -16,6 +16,9 @@ body{
 .ace_editor.readOnly{
   color: white !important;
   height: 200px !important;
+  .ace_text-layer > .ace_line, .ace_text-layer > .ace_line_group{
+    padding: 2rem;
+  }
 }
 // .ace_editor {
 //   // font-family: sans-serif;

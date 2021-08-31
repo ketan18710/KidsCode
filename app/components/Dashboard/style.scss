@@ -1,9 +1,12 @@
 @import './../../styles/main.scss';
 .DashboardComp{
   width: 100%;
-  padding: 5rem ;
+  padding: 2rem  5rem ;
+  .runCode{
+    margin-bottom: 2rem;
+  }
   .Editor{
     width: 100%;
-    gap: 2rem;
+    gap: 0rem;
   }
 }

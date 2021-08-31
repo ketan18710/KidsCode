@@ -23,6 +23,7 @@ import { PLATFORM_ASSETS } from 'utils/constants';
 // Import root app
 import App from 'containers/App';
 import AppError from 'containers/AppError';
+import Dashboard from 'containers/Dashboard';
 
 
 // Import Language Provider

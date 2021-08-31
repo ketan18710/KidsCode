@@ -35,6 +35,7 @@ function Editor(props) {
           debounceChangePeriod
           showGutter={!readOnly ? true : false }
           readOnly={readOnly}
+          height={!readOnly ? "300px" : "200px" }
           className={readOnly ? 'readOnly' : ''}
           highlightActiveLine={true}
           value={output ? retCode(output) : editorVal}

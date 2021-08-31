@@ -36,7 +36,7 @@ function* getCodeResultFunc({payload}){
         
     )      
     const { statusCode,data } = result;
-    debugger
+    // debugger
     if(statusCode === 200) {
         yield put(setCodeResult({ 
             status: API_CONSTANTS.success,

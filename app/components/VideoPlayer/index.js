@@ -3,7 +3,7 @@ import './style.scss'
 function VideoPlayer(props) {
   return (
     <div className="VideoPlayer">
-      <video className="KidsCodevideoPlayer" controlsList="nodownload" crossOrigin={true} src="https://www.w3schools.com/html/mov_bbb.mp4" controls preload="auto" ></video>
+      <video className="KidsCodevideoPlayer" controlsList="nodownload" crossOrigin={true} src="https://media.istockphoto.com/videos/technology-interface-computer-data-screen-display-animation-video-id488946534" controls preload="auto" ></video>
     </div> 
   )
 }

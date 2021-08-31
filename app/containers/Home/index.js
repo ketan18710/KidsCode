@@ -16,7 +16,7 @@ export function Home(props) {
   return (
     <div>
       <Helmet>
-        <title>Kids Code</title>
+        <title>Kid Code</title>
         <meta name="description" content="Description of Home" />
       </Helmet>
       <HomeComponent {...props} />

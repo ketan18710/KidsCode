@@ -12,6 +12,8 @@ import { Grid } from '@material-ui/core';
 import PropTypes from 'prop-types';
 import injectReducer from 'utils/injectReducer';
 import injectSaga from 'utils/injectSaga';
+import {redirectToUrl} from 'utils/common'
+import {APP_ROUTES} from 'utils/constants'
 import reducer from './reducer';
 import saga from './saga';
 import './styles.scss';
@@ -34,18 +36,33 @@ const DashboardContainer = props => {
   return (
     <div className="main_dashboard">
       <Helmet>
-        <title>KidsCode-Dashbaord</title>
+        <title>KidCode-Dashbaord</title>
         <meta name="description" content="Dashboard page" />
       </Helmet>
       <>
         <Grid className="dashboard" container>
           <Grid item container className="sidebar" direction="column"    lg={2}>
-            <h1>Kids Code</h1>
+            <h1 onClick={()=>redirectToUrl(APP_ROUTES.HOME)}>KidCode</h1>
             <h3 onClick={()=>setActiveTab(activeTabConsts.video)} className={activeTab === activeTabConsts.video ? "active" : ""}>
               Video Player
             </h3>
             <h3 onClick={()=>setActiveTab(activeTabConsts.code)}  className={activeTab === activeTabConsts.code ? "active" : ""}>
               Code Editor
+            </h3>
+            <h3>
+              Take a Quiz
+            </h3>
+            <h3>
+              Daily Learning
+            </h3>
+            <h3>
+              K-points
+            </h3>
+            <h3 className="">
+              Help
+            </h3>
+            <h3 className="bottom">
+              Logout
             </h3>
           </Grid>
           <Grid className="mainContent" item container lg={10}>
