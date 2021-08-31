@@ -16,7 +16,6 @@ import { ConnectedRouter } from 'connected-react-router';
 
 import history from 'utils/history';
 
-
 import { PLATFORM_ASSETS } from 'utils/constants';
 // import 'sanitize.css/sanitize.css';
 
@@ -24,7 +23,6 @@ import { PLATFORM_ASSETS } from 'utils/constants';
 import App from 'containers/App';
 import AppError from 'containers/AppError';
 import Dashboard from 'containers/Dashboard';
-
 
 // Import Language Provider
 import LanguageProvider from 'containers/LanguageProvider';
@@ -41,7 +39,6 @@ import { translationMessages } from './i18n';
 
 const versionJSON = require('../version.json');
 
-
 // Observe loading of Open Sans (to remove open sans, remove the <link> tag in
 // the index.html file and this observer)
 // const openSansObserver = new FontFaceObserver('Open Sans', {});
@@ -52,7 +49,6 @@ const versionJSON = require('../version.json');
 // });
 
 // Create redux store with history
-
 
 class ErrorManage extends React.Component {
   constructor(props) {
@@ -103,12 +99,11 @@ const initialState = {};
 const store = configureStore(initialState, history);
 const MOUNT_NODE = document.getElementById('app');
 
-if(process.env.API_ENV === 'production') {
-  console.log = function() { }
+if (process.env.API_ENV === 'production') {
+  console.log = function() {};
 }
 
 const render = messages => {
-
   ReactDOM.render(
     <Provider store={store}>
       <LanguageProvider messages={messages}>

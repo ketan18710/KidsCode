@@ -9,8 +9,8 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { Helmet } from 'react-helmet';
 import { compose } from 'redux';
-import './style.scss'
-import HomeComponent from 'components/Home'
+import './style.scss';
+import HomeComponent from 'components/Home';
 
 export function Home(props) {
   return (
@@ -28,14 +28,16 @@ Home.propTypes = {
   dispatch: PropTypes.func.isRequired,
 };
 
-
 function mapDispatchToProps(dispatch) {
   return {
     dispatch,
   };
 }
 
-const withConnect = connect(null, mapDispatchToProps);
+const withConnect = connect(
+  null,
+  mapDispatchToProps,
+);
 
 export default compose(
   withConnect,
